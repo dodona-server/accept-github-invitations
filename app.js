@@ -85,6 +85,7 @@ let doGitHubAccept = async function() {
             }
             lastResponse = unJSON;
             results = JSON.parse(unJSON);
+            console.log(results);
         } catch (_err) {
             console.log("Error getting a batch of invitations");
             lastRequestHits = 0;
