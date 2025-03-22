@@ -116,7 +116,7 @@ let doGitHubAccept = async function() {
                 // Send PATCH request to accept invitation
                 try {
                     await uti.hPatch("https://api.github.com/user/repository_invitations/" + invitationID, headers);
-                    console.log("Accepted invite #" + invitationID);
+                    console.log("Accepted invite #" + invitationID + " from " + inviter);
                 } catch (_err) {
                     console.log("Error accepting invite #" + invitationID);
                 }
